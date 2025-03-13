@@ -268,11 +268,10 @@ h2,
 
 .content-two-container {
     /* border: 2px solid rgb(0, 255, 26); */
-    min-height: 300px;
-    width: 100%;
+    
     display: flex;
     flex-flow: column;
-    padding: 0 10vw;
+    padding: 4vw 10vw;
     justify-content: center;
     align-items: center;
 }
