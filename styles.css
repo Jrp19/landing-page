@@ -55,7 +55,7 @@ img {
 }
 
 .left-side{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -92,7 +92,7 @@ img {
 }
 
 .right-side{
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
