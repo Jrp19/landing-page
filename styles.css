@@ -89,6 +89,10 @@ img {
     border: 0.5px solid #E5E7EB;
     transition: 400ms;
     display: flex;
+    flex: 1;
+    align-self: flex-start;
+    justify-content: flex-start;
+    min-width: 120px;
 }
 
 .left-side button:hover {
@@ -112,7 +116,7 @@ img {
 
 h1 {
     display: flex;
-    font-size: clamp(1rem, -0.7241rem + 5.5172vw, 3rem);
+    font-size: clamp(1.875rem, 0.9052rem + 3.1034vw, 3rem);
     color: #F9FAF8;
     font-weight: 900;
 }
@@ -124,7 +128,7 @@ p {
 
 h2 {
     text-align: center;
-    font-size: clamp(0.75rem, -0.5431rem + 4.1379vw, 2.25rem);
+    font-size: clamp(1.625rem, 1.0862rem + 1.7241vw, 2.25rem);
     color: #1F2937;
     font-weight: 900;
     padding-top: 30px;
@@ -242,10 +246,11 @@ h2 {
     /* border: 2px solid red; */
     background: #3882F6;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    gap: 50px;
-    height: 8rem;
+    /* gap: 50px; */
+    min-height: 8rem;
     width: 70%;
     padding: 20px 30px;
     border-radius: 10px;
@@ -255,22 +260,23 @@ h2 {
 .contentright {
     /* border: 3px solid salmon; */
     display: flex;
-    flex-flow:column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100%;
-    gap: 10px;
 }
 
 .contentleft {
-    flex-grow: 0;
+    flex-grow: 1;
     padding: 10px;
     align-items: flex-start;
+    flex-flow: column wrap;
 }
 
 .contentright {
-    flex-grow:0;
+    /* border: 2px solid red; */
+    flex-grow:1;
     justify-content: center;
     align-items: flex-end;
+    
 }
 .action {
     font-size: clamp(1rem, 0.7845rem + 0.6897vw, 1.25rem);
@@ -289,11 +295,12 @@ h2 {
     border-radius: 10px;
     color: #eee;
     font-weight: 700;
-    font-size: clamp(0.625rem, 0.3017rem + 1.0345vw, 1rem);
+    font-size: 16px 1rem;
     color: #E5E7EB;
     border: 2px solid #E5E7EB;
     transition: 400ms;
     display: flex;
+    min-width: fit-content;
     
 }
 
@@ -304,3 +311,14 @@ h2 {
     transition: 400ms;
 }
 
+.footer {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    display: flex;
+    flex: 1;
+    font-size: 12px;
+    padding: 25px 15%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
