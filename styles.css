@@ -18,25 +18,29 @@ html,
 body {
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden;
 }
 
 img {
     background-color: grey;
     display: flex;
-    flex-wrap: wrap;
-    width: 80%;
-    flex: 0 1 auto;
+    width: 30vw;
+    height: auto;
+    border-radius: 25px;
+    flex-shrink: 1;
 }
 
 .header {
     background-color: #1F2937;
-    color: #F9FAF8;
     display: flex;
-    padding: 10px 15%;
+    padding: 10px 10vw;
     gap: 20px;
     justify-content: flex-end;
     align-items: center;
+}
+
+.headercontent {
+    display: flex;
+    color: #F9FAF8;
 }
 
 .header a:hover {
@@ -45,39 +49,62 @@ img {
 
 .logo {
     margin-right: auto;
-    font-size: 40px
+    font-size: 2rem
 }
 
 
 .header-container {
     /* border: 2px red solid; */
     background-color: #1F2937;
-    /* min-height: 400px; */
+    min-height: 400px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 50px 15%;
+    padding: 0 10vw;
+    
     
 }
-
+.headerboth {
+    /* border: 2px red solid; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5em 5em;
+}
 .left-side{
     /* border: 2px red solid; */
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    flex-grow: 0;
+    flex-flow: row wrap;
+    flex-grow: 1;
     flex-shrink: 1;
-    flex-basis: 50%;
-    width: calc(100% / 6);
-    justify-content: center;
+    flex-basis: 10%;
+    justify-content: flex-start;
     align-items: flex-start;
-    
-    flex-wrap: wrap;
-    min-width: 0;
-    gap: 16px;
+    gap: 30px;
+    flex-shrink: 2;
+    padding-right: 6em;
 }
 
+@media only screen and (max-width: 800px) {
+    .left-side {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0 5%;
+    }
+    .left-side button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        width: 350px;
+    }
+
+}
 .left-side button {
     padding: 5px 30px;
     background: #3882F6;
@@ -89,10 +116,9 @@ img {
     border: 0.5px solid #E5E7EB;
     transition: 400ms;
     display: flex;
-    flex: 1;
     align-self: flex-start;
     justify-content: flex-start;
-    min-width: 120px;
+    min-width: min-content;
 }
 
 .left-side button:hover {
@@ -105,11 +131,7 @@ img {
 .right-side{
     /* border: 2px red solid; */
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 10%;
-    width: calc(100% / 6);
-    height: 100%;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -135,7 +157,7 @@ h2 {
 }
 .content-img {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex: 0 1 auto;
     width: 10rem;
     height: 10rem;
@@ -155,7 +177,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-flow: row;
-    padding: 0 15%;
+    padding: 0 10vw;
     justify-content: center;
     align-items: center;
 }
@@ -195,7 +217,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
-    padding: 50px 15%;
+    padding: 50px 10vw;
     background: #E5E7EB;
     justify-content: center;
     align-items: center;
@@ -237,7 +259,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-flow: column;
-    padding: 0 15%;
+    padding: 0 10vw;
     justify-content: center;
     align-items: center;
 }
