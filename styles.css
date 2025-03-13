@@ -339,7 +339,7 @@ h2 {
     display: flex;
     flex: 1;
     font-size: 12px;
-    padding: 25px 15%;
+    padding: 25px 5em;
     gap: 20px;
     justify-content: center;
     align-items: center;
