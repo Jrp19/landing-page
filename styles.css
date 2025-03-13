@@ -63,7 +63,7 @@ img {
     
 }
 .headerboth {
-    border: 2px red solid;
+    /* border: 2px red solid; */
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -183,7 +183,7 @@ h2,
 }
 
 .content-container {
-    border: 2px solid rgb(0, 255, 26);
+    /* border: 2px solid rgb(0, 255, 26); */
     /* min-height: 400px; */
     display: flex;
     flex-flow: column wrap;
@@ -193,7 +193,7 @@ h2,
 }
 
 .content {
-    border: 2px solid rgb(0, 98, 255);
+    /* border: 2px solid rgb(0, 98, 255); */
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
