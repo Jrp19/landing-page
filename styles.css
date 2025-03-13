@@ -242,6 +242,9 @@ h2 {
     /* border: 2px solid red; */
     background: #3882F6;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
     height: 8rem;
     width: 70%;
     padding: 20px 30px;
@@ -250,11 +253,10 @@ h2 {
 
 .contentleft,
 .contentright {
-    /* border: 3px solid salmon; */
+    border: 3px solid salmon;
     display: flex;
     flex-flow:column nowrap;
     justify-content: center;
-    align-items: flex-start;
     height: 100%;
     gap: 10px;
 }
@@ -262,10 +264,13 @@ h2 {
 .contentleft {
     flex-grow: 0;
     padding: 10px;
+    align-items: flex-start;
 }
 
 .contentright {
     flex-grow:0;
+    justify-content: center;
+    align-items: flex-end;
 }
 .action {
     font-size: clamp(1rem, 0.7845rem + 0.6897vw, 1.25rem);
@@ -289,8 +294,7 @@ h2 {
     border: 2px solid #E5E7EB;
     transition: 400ms;
     display: flex;
-    flex: 0 1 auto;
-    align-self: center;
+    
 }
 
 .contentright button:hover {
