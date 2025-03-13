@@ -16,16 +16,24 @@ body {
 
 img {
     background-color: grey;
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    flex: 0 1 auto;
 }
 
 .header {
     background-color: #1F2937;
     color: #F9FAF8;
     display: flex;
-    padding: 10px 200px;
+    padding: 10px 15%;
     gap: 20px;
     justify-content: flex-end;
     align-items: center;
+}
+
+.header a:hover {
+    color: #3882F6;
 }
 
 .logo {
@@ -42,21 +50,22 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 50px 200px;
+    padding: 50px 15%;
     
 }
 
 .left-side{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     display: flex;
     flex-direction: column;
     height: 100%;
-    flex-grow: 1;
-    flex-shrink: 4;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 50%;
     width: calc(100% / 6);
     justify-content: center;
     align-items: flex-start;
-    padding-right: 150px;
+    
     flex-wrap: wrap;
     min-width: 0;
     gap: 16px;
@@ -72,6 +81,7 @@ img {
     color: #E5E7EB;
     border: 0.5px solid #E5E7EB;
     transition: 400ms;
+    display: flex;
 }
 
 .left-side button:hover {
@@ -82,10 +92,11 @@ img {
 }
 
 .right-side{
-    /* border: 2px red solid; */
+    border: 2px red solid;
     display: flex;
     flex-grow: 1;
     flex-shrink: 1;
+    flex-basis: 10%;
     width: calc(100% / 6);
     height: 100%;
     justify-content: center;
@@ -112,9 +123,11 @@ h2 {
     padding-top: 30px;
 }
 .content-img {
-    display:block;
-    width: 180px;
-    height: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    width: 10rem;
+    height: 10rem;
     border: 5px solid #3882F6;
     border-radius: 5px;
     background: #eee;
@@ -130,12 +143,10 @@ h2 {
     height: 400px;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 160px;
+    flex-flow: row wrap;
+    padding: 0 15%;
     justify-content: center;
     align-items: center;
-    flex: initial;
 }
 
 .content {
@@ -143,6 +154,7 @@ h2 {
     display: flex;
     gap: 100px;
     flex: initial;
+    flex-flow: row wrap;
     
 }
 
@@ -170,7 +182,7 @@ h2 {
     width: 100%;
     display: flex;
     flex-flow: column wrap;
-    padding: 50px 160px;
+    padding: 50px 15%;
     background: #E5E7EB;
     justify-content: center;
     align-items: center;
@@ -183,20 +195,21 @@ h2 {
     flex-flow: column nowrap;
     flex: 0 1 auto;
     max-width: 55%;
+    gap: 16px;
 }
 .quote {
     /* border: 1px solid red; */
-    font-size: clamp(1rem, -0.0776rem + 3.4483vw, 2.25rem);
+    font-size: clamp(0.75rem, -0.2198rem + 3.1034vw, 1.875rem);
     font-style: italic;
     color: #1F2937;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-self: center;
 }
 
 .quote-sig {
-    font-size:24px;
+    font-size: clamp(0.75rem, 0.1034rem + 2.069vw, 1.5rem);
     font-weight: 700;
     color:#1F2937;
     display: flex;
